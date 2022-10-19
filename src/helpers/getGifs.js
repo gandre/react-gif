@@ -1,7 +1,7 @@
 const apiKey = '59e30wFtUhM5biZRI8BhVUsBxFAXHG0j';
 const limit = 5;
 
-export const getGrifs = async (category) => {
+export const getGifs = async (category) => {
   const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${category}&limit=${limit}`;
 
   const resp = await fetch(url);
